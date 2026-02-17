@@ -1,29 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-  --primary: #000000;
-  --secondary: #333333;
-  --accent: #f5f5f5;
-  --text-main: #000000;
-  --text-muted: #707070;
+  /* Midnight Navy & Gold Theme */
+  --primary: #0f172a;
+  /* Deep Navy */
+  --secondary: #d4af37;
+  /* Metallic Gold */
+  --accent: #f8fafc;
+  /* Very Light Slate */
+  --text-main: #1e293b;
+  /* Dark Slate */
+  --text-muted: #64748b;
+  /* Muted Slate */
   --background: #ffffff;
+  --background-rgb: 255, 255, 255;
   --card-bg: #ffffff;
-  --border: #e0e0e0;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  --transition: all 0.4s ease;
+  --border: #e2e8f0;
+  /* Light Slate Border */
+  --shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #ffffff;
-    --secondary: #cccccc;
-    --accent: #111111;
-    --text-main: #ffffff;
-    --text-muted: #999999;
-    --background: #000000;
-    --card-bg: #000000;
-    --border: #1a1a1a;
-    --shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    --secondary: #121110;
+    /* Bright Gold */
+    --accent: #1e293b;
+    /* Dark Slate Accent */
+    --text-main: #566f88;
+    /* Lightest Slate */
+    --text-muted: #94a3b8;
+    /* Muted Slate */
+    --background: #0f172a;
+    /* Deep Navy Background */
+    --background-rgb: 15, 23, 42;
+    --card-bg: #1e293b;
+    /* Dark Slate Card */
+    --border: #334155;
+    /* Medium Slate Border */
+    --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -138,10 +154,11 @@ section {
 }
 
 .btn-primary:hover {
-  background: transparent;
-  color: var(--primary);
-  transform: none;
-  box-shadow: none;
+  background: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
 .btn-outline {
@@ -369,7 +386,7 @@ section {
 }
 
 .footer-about p {
-  color: #999;
+  color: var(--text-muted);
   margin-top: 1.5rem;
   line-height: 1.6;
 }
@@ -388,7 +405,7 @@ section {
 }
 
 .footer-links a {
-  color: #777;
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
@@ -402,7 +419,7 @@ section {
 }
 
 .newsletter-input {
-  background: #222;
+  background: rgba(255, 255, 255, 0.05);
   border: none;
   padding: 0.8rem 1rem;
   color: white;
@@ -422,7 +439,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #555;
+  color: var(--text-muted);
   font-size: 0.8rem;
 }
 

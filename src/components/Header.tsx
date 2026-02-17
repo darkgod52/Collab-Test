@@ -50,10 +50,9 @@ export default function Header() {
 
         .header.scrolled {
           padding: 1rem 0;
-          background: rgba(var(--background-rgb), 0.8);
+          background: rgba(var(--background-rgb), 0.9);
           backdrop-filter: blur(10px);
           border-bottom: 1px solid var(--border);
-          background: var(--background);
         }
 
         .header-container {
@@ -72,7 +71,7 @@ export default function Header() {
 
         .highlight {
           font-weight: 700;
-          color: var(--primary);
+          color: var(--secondary);
         }
 
         .nav-menu {
@@ -113,7 +112,7 @@ export default function Header() {
           position: absolute;
           top: -6px;
           right: -6px;
-          background: var(--primary);
+          background: var(--secondary);
           color: var(--background);
           font-size: 0.5rem;
           width: 14px;

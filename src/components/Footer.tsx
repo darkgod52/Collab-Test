@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className="footer" style={{ background: 'var(--background)', color: 'var(--text-main)', borderTop: '1px solid var(--border)', padding: '6rem 0 3rem' }}>
+        <footer className="footer" style={{ borderTop: '1px solid var(--border)' }}>
             <div className="container">
                 <div className="footer-grid" style={{ gridTemplateColumns: '1.5fr 1fr 1fr 1.5fr', gap: '2rem' }}>
                     <div className="footer-about">
@@ -32,14 +32,14 @@ export default function Footer() {
                     <div className="footer-newsletter">
                         <h4 className="footer-title" style={{ fontSize: '0.7rem', color: 'var(--text-main)', fontWeight: 600 }}>Journal</h4>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '1.5rem' }}>Sign up for our weekly aesthetic.</p>
-                        <div className="newsletter-input-group" style={{ marginTop: '1rem', borderBottom: '1px solid var(--border)' }}>
+                        <div className="newsletter-input-group" style={{ marginTop: '1rem' }}>
                             <input
                                 type="email"
                                 placeholder="Email"
                                 className="newsletter-input"
-                                style={{ background: 'transparent', padding: '0.5rem 0', color: 'var(--text-main)', fontSize: '0.8rem' }}
+                                style={{ fontSize: '0.8rem' }}
                             />
-                            <button className="newsletter-btn btn" style={{ background: 'transparent', color: 'var(--text-main)', padding: '0.5rem', fontSize: '0.7rem', letterSpacing: '2px' }}>Join</button>
+                            <button className="newsletter-btn btn" style={{ fontSize: '0.7rem', letterSpacing: '2px' }}>Join</button>
                         </div>
                     </div>
                 </div>
