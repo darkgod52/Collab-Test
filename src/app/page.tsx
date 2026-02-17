@@ -26,8 +26,9 @@ export default function Home() {
               color: 'var(--text-main)',
               maxWidth: '450px',
               padding: '2rem',
-              backgroundColor: 'rgba(255, 255, 255, 0.8)',
-              backdropFilter: 'blur(10px)'
+              backgroundColor: 'rgba(var(--background-rgb), 0.85)',
+              backdropFilter: 'blur(10px)',
+              border: '1px solid var(--border)'
             }}>
               <h3 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 300 }}>Timeless Fashion</h3>
               <p style={{ marginBottom: '1.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Pieces that transcend seasons. Handcrafted with precision.</p>
